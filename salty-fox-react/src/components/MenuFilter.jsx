@@ -1,0 +1,2 @@
+import { FormGroup, Label, Input } from 'reactstrap';
+export default function MenuFilter({category,setCategory}) {return <FormGroup className="menu-filter mx-auto" style={{maxWidth:320}}><Label for="categoryFilter">Filter by meal</Label><Input id="categoryFilter" type="select" value={category} onChange={e=>setCategory(e.target.value)}>{['All','Breakfast','Lunch','Dinner'].map(value=><option key={value} value={value}>{value}</option>)}</Input></FormGroup>;}

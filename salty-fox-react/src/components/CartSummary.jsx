@@ -1,0 +1,2 @@
+import { Table } from 'reactstrap';
+export default function CartSummary({subtotal,tax,total}) {return <Table borderless className="mt-3" aria-label="Order totals"><tbody><tr><th scope="row">Subtotal</th><td className="text-end">${subtotal.toFixed(2)}</td></tr><tr><th scope="row">Tax (8.25%)</th><td className="text-end">${tax.toFixed(2)}</td></tr><tr className="fw-bold border-top"><th scope="row">Total</th><td className="text-end">${total.toFixed(2)}</td></tr></tbody></Table>;}

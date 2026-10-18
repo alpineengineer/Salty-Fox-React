@@ -1,0 +1,2 @@
+import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'reactstrap';
+export default function ConfirmModal({isOpen,title,message,onConfirm,onClose,confirmText='Confirm',showCancel=true}) {return <Modal isOpen={isOpen} toggle={onClose} centered><ModalHeader toggle={onClose}>{title}</ModalHeader><ModalBody>{message}</ModalBody><ModalFooter>{showCancel&&<Button color="secondary" onClick={onClose}>Close</Button>}<Button color="primary" onClick={onConfirm}>{confirmText}</Button></ModalFooter></Modal>;}
